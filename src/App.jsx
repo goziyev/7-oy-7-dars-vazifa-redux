@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import dragula from "dragula";
-import './App.css'
+import "./App.css";
 function App() {
   useEffect(() => {
     const drake = dragula([
@@ -31,11 +31,6 @@ function App() {
 
   return (
     <div>
-      <h1>a trello'esque experiment</h1>
-      <p>
-        made by Toto <a href="https://twitter.com/herr_toto">@herr_toto</a> -
-        powered by <a href="https://bevacqua.github.io/dragula/">dragula</a>
-      </p>
       <div id="kaban">
         <div id="scroller">
           <div id="boards">
