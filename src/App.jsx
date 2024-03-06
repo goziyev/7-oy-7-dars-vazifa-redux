@@ -9,13 +9,11 @@ function App() {
       document.getElementById("b3"),
     ]);
 
-    // Scrollable area
     const element = document.getElementById("boards");
     const numberOfBoards = element.getElementsByClassName("board").length;
     const boardsWidth = numberOfBoards * 316; // Width of all Boards
     element.style.width = boardsWidth + "px"; // set Width
 
-    // disable text-selection
     function disableselect(e) {
       return false;
     }
@@ -35,7 +33,7 @@ function App() {
         <div id="scroller">
           <div id="boards">
             <div className="board" id="board1">
-              <header>On hold</header>
+              <header>Qilish kerak</header>
               <div className="cards" id="b1">
                 <div className="card">
                   <span className="cardtitle noselect">A great card #1</span>
@@ -53,7 +51,7 @@ function App() {
             </div>
 
             <div className="board" id="board2">
-              <header>In Progress</header>
+              <header>Bajarilmoqda</header>
               <div className="cards" id="b2">
                 <div className="card">
                   <span className="cardtitle">A great card #5</span>
@@ -62,7 +60,7 @@ function App() {
             </div>
 
             <div className="board" id="board3">
-              <header>Done</header>
+              <header>Bajarilgan</header>
               <div className="cards" id="b3">
                 <div className="card">
                   <span className="cardtitle noselect">A great card #5</span>
