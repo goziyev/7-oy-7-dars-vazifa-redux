@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import dragula from "dragula";
 import "./App.css";
+
 function App() {
   useEffect(() => {
     const drake = dragula([
@@ -11,14 +12,15 @@ function App() {
 
     const element = document.getElementById("boards");
     const numberOfBoards = element.getElementsByClassName("board").length;
-    const boardsWidth = numberOfBoards * 316; // Width of all Boards
-    element.style.width = boardsWidth + "px"; // set Width
+    const boardsWidth = numberOfBoards * 316;
+    element.style.width = boardsWidth + "px";
 
-    function disableselect(e) {
+    function disableSelect(e) {
       return false;
     }
-    document.onselectstart = new Function();
-    document.onmousedown = disableselect;
+
+    document.onselectstart = disableSelect;
+    document.onmousedown = disableSelect;
 
     return () => {
       drake.destroy();
@@ -26,6 +28,11 @@ function App() {
       document.onmousedown = null;
     };
   }, []);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert("Salom");
+  }
 
   return (
     <div>
@@ -47,6 +54,16 @@ function App() {
                 <div className="card">
                   <span className="cardtitle noselect">A great card #4</span>
                 </div>
+                <form onSubmit={handleSubmit}>
+                  <input
+                    className="input"
+                    type="text"
+                    placeholder="Topshiriqni kiriting.."
+                  />
+                  <button className="button" type="submit">
+                    Qo'shish
+                  </button>
+                </form>
               </div>
             </div>
 

@@ -58,7 +58,7 @@ body {
   height: auto;
   margin: 8px;
   width: 500px;
-  background-color: lightgray;
+  background-color: #f1f2f4;
   border-radius: 20px;
   padding: 10px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -67,7 +67,7 @@ body {
   float: left;
   width: 100%;
   padding: 0.5em;
-  background-color: lightgray;
+  background-color: #f1f2f4;
   text-transform: uppercase;
   border-radius: 3px 3px 0 0;
   margin-top: 10px;
@@ -140,4 +140,37 @@ body {
   opacity: 0.4;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
+}
+.input {
+  padding: 15px 10px;
+  width: 100%;
+  float: left;
+  width: 100%;
+
+  height: auto;
+  background-color: white;
+  padding: 20px 10px;
+  margin: 4px 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+.button {
+  float: left;
+  width: 100%;
+
+  height: auto;
+  background-color: blue;
+  padding: 20px 10px;
+  margin: 4px 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: move;
+  color: white;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
 }
