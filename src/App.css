@@ -153,10 +153,6 @@ body {
   margin: 4px 0;
   border-radius: 10px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: grab;
 }
 .button {
   float: left;
